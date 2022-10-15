@@ -53,7 +53,7 @@
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .encabezado ul {
@@ -566,7 +566,7 @@
 
 .galeria-multimedia {
     width: 80%;
-    margin: 80px;
+    margin: 60px;
 }
 
 /* ! FIN DEL MAIN DE MULTIMEDIA */
@@ -819,6 +819,52 @@ textarea {
         margin: -20px 0;
         margin-bottom: 20px;
         scale: 0.75;
+    }
+
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .foto3, .foto6, .foto9{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .grid-gallery2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-gallery div img:hover {
+        scale: 1.4;
+        cursor: pointer;
+    }
+    
+    .grid-gallery .foto3 img:hover, .grid-gallery .foto6 img:hover, .grid-gallery .foto9 img:hover{
+        scale: 1.2;
+        cursor: pointer;
+    }
+
+    .video-gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(7, 1fr);
+        width: 100%;
+    }
+
+    .video1, .video2, .video3, .video4, .video5, .video6, .video7{
+        background-color: cadetblue;
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+        height: auto;
     }
 
     .derechos {
