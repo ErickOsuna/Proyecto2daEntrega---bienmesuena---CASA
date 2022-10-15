@@ -238,8 +238,22 @@
     font-weight: 200;
 }
 
+.nosotros {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.nosotros div img {
+    width: 300px;
+}
+
 .submenu ul {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     width: 100%;
     height: auto;
     display: flex;
@@ -273,16 +287,17 @@
     color: rgb(255, 73, 73);
 }
 
-
-
+.submenu2{
+    /* background-color: blueviolet; */
+    width: 100%;
+}
 
 .submenu2 ul {
     /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     text-transform: uppercase;
     margin-bottom: 40px;
     display: none;
@@ -320,9 +335,6 @@
     /* background-color: aquamarine; */
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     text-transform: uppercase;
     margin-bottom: 40px;
     display: none;
@@ -352,21 +364,6 @@
     color: rgb(255, 73, 73);
 }
 
-
-
-
-.nosotros {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nosotros div img {
-    width: 300px;
-}
 
 #director {
     display: flex;
@@ -727,9 +724,9 @@ textarea {
 
 /* ! FIN DEL FOOTER */
 
-/* TODO: INICIO @MEDIA QUERIES 1075 PX*/
+/* TODO: INICIO @MEDIA QUERIES 1100 PX*/
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1100px) {
     .encabezado ul {
         padding: 0;
         margin: 0;
@@ -748,11 +745,11 @@ textarea {
     }
 }
 
-/* ? FIN @MEDIA QUERIES 1075 PX*/
+/* ? FIN @MEDIA QUERIES 1100 PX*/
 
-/* TODO: INICIO @MEDIA QUERIES 920 PX*/
+/* TODO: INICIO @MEDIA QUERIES 930 PX*/
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 930px) {
     .encabezado ul li {
         padding: 10px 10px;
     }
@@ -793,11 +790,11 @@ textarea {
     }
 }
 
-/* ? FIN @MEDIA QUERIES 920 PX*/
+/* ? FIN @MEDIA QUERIES 930 PX*/
 
-/* TODO: INICIO @MEDIA QUERIES 820 PX*/
+/* TODO: INICIO @MEDIA QUERIES 830 PX*/
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 830px) {
     .encabezado div {
         flex-direction: column;
         scale: 0.8;
@@ -812,6 +809,7 @@ textarea {
     }
 
     .submenu2 ul {
+        /* background-color: crimson; */
         display: flex;
         margin: -20px 0;
         margin-top: 20px;
@@ -874,7 +872,7 @@ textarea {
     .video5,
     .video6,
     .video7 {
-        background-color: cadetblue;
+        /* background-color: cadetblue; */
         grid-column: span 1;
         grid-row: span 1;
         width: 273..594px;
@@ -903,12 +901,12 @@ textarea {
     }
 }
 
-/* ? FIN @MEDIA QUERIES 820 PX*/
+/* ? FIN @MEDIA QUERIES 830 PX*/
 
 
-/* TODO: INICIO @MEDIA QUERIES 750 PX*/
+/* TODO: INICIO @MEDIA QUERIES 770 PX*/
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:770px) {
 
     .grid-layout {
         width: 100%;
@@ -993,7 +991,7 @@ textarea {
 
 }
 
-/* ? FIN @MEDIA QUERIES 750 PX*/
+/* ? FIN @MEDIA QUERIES 770 PX*/
 
 /* TODO: INICIO @MEDIA QUERIES 620 PX*/
 
@@ -1068,6 +1066,14 @@ textarea {
 
     .news h3 {
         scale: 0.7;
+    }
+
+    .submenu2 ul a{
+        padding: 10px;
+    }
+
+    .submenu3 ul a{
+        padding: 20px 10px;
     }
 
     .formulario {
