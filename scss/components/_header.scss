@@ -1,0 +1,87 @@
+@import "./base/_variables";
+
+/* * INICIO DEL HEADER */
+
+.encabezado {
+    background-color: $primer-color;
+    width: 100%;
+    grid-area: encabezado;
+    color: $segundo-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    ul {
+        /* background-color: rgb(176, 176, 248); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        color: $segundo-color;
+        padding: 5px;
+        margin: 5px 0;
+
+        li {
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 200;
+            transition: 0.6s;
+            text-decoration: none;
+        }
+
+        a {
+            &:link {
+                color: $segundo-color;
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: $segundo-color;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: $tercer-color;
+                text-decoration: none;
+            }
+
+            &:active {
+                color: $cuarto-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    div {
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 5px 60px 5px 10px;
+    }
+
+    h1 {
+        font-weight: 200;
+        font-size: 22px;
+    }
+}
+
+.dropdown {
+    visibility: hidden;
+}
+
+.erick-boton {
+    border: 1px solid $segundo-color;
+}
+
+/* ! FIN DEL HEADER */

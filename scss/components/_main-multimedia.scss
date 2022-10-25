@@ -1,0 +1,59 @@
+@import "./base/_variables";
+
+/* * INICIO DEL MAIN DE MULTIMEDIA */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    gap: 15px 15px;
+    transition: 0.6s;
+    margin: 50px 0;
+
+    div img {
+        width: 100%;
+        transition: 0.6s;
+        border: 0.1px solid $segundo-color;
+
+        &:hover {
+            scale: 1.8;
+            cursor: pointer;
+        }
+    }
+}
+
+.grid-gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    gap: 15px 15px;
+    transition: 0.6s;
+    margin: 50px 0;
+}
+
+.video4 {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.boton2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.boton-multimedia {
+    width: 80px;
+}
+
+.galeria-multimedia {
+    width: 80%;
+    margin: 60px;
+}
+
+/* ! FIN DEL MAIN DE MULTIMEDIA */

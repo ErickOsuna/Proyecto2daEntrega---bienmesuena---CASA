@@ -1,0 +1,23 @@
+@import "./base/_variables";
+
+/* * INICIO DEL MAIN DE NOTICIAS */
+.news {
+    display: flex;
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+
+    h3 {
+        font-size: 40px;
+        font-weight: 200;
+        margin: 40px 0;
+    }
+
+    p {
+        margin: 40px 0;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+/* ! FIN DEL MAIN DE NOTICIAS */
