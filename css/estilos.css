@@ -387,7 +387,8 @@ audio {
     font-size: 18px;
     font-weight: 200;
     padding: 20px;
-    text-align: justify; }
+    text-align: justify;
+    margin-left: 40px; }
 
 .members2 {
   width: 90%;
