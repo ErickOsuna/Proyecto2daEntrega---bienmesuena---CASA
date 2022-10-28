@@ -280,7 +280,7 @@ audio {
   flex-direction: column;
   margin: 0; }
   .nosotros div img {
-    width: 300px; }
+    width: 400px; }
   .nosotros p {
     width: 80%;
     margin-top: 80px;
@@ -386,14 +386,16 @@ audio {
   .members p {
     font-size: 18px;
     font-weight: 200;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     text-align: justify;
-    margin-left: 40px; }
+    margin-left: 40px;
+    margin-right: 0; }
 
 .members2 {
   width: 90%;
   height: auto;
   text-align: center;
+  align-items: center;
   display: none; }
   .members2 h4 {
     font-size: 22px;
@@ -403,7 +405,7 @@ audio {
   .members2 p {
     font-size: 18px;
     font-weight: 200;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 0 20px 0;
     text-align: justify; }
 
 /* ! FIN DEL MAIN DE NOSOTROS */
