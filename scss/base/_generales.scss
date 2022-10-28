@@ -2,8 +2,7 @@
 
 /* *INICIO DEL RESET */
 * {
-    padding: 0;
-    margin: 0;
+    @extend %reset;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style: none;

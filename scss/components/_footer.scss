@@ -4,8 +4,8 @@
     grid-area: pie;
     display: flex;
     width: 100%;
-    color:  $segundo-color;
-    background-color: $primer-color;
+    color: nth($colores, 2);
+    background-color: nth($colores, 1);
     justify-content: space-evenly;
     margin-top: 40px;
     -webkit-box-shadow: 0px -7px 5px 0px rgba(0, 0, 0, 0.75);
@@ -16,6 +16,23 @@
     div a {
         transition: 0.6s;
         text-decoration: none;
+
+        &:hover {
+            transform: scale(1.3);
+            color: nth($colores, 3);
+        }
+
+        &:link {
+            color: nth($colores, 2);
+        }
+
+        &:visited {
+            color: nth($colores, 2);
+        }
+
+        &:active {
+            color: nth($colores, 4);
+        }
     }
 
     img {
@@ -31,27 +48,25 @@
     a {
         &:hover {
             transform: scale(1.3);
-            color: $tercer-color;
+            color: nth($colores, 3);
         }
 
         &:link {
-            color: $segundo-color;
+            color: nth($colores, 2);
         }
 
         &:visited {
-            color: $segundo-color;
+            color: nth($colores, 2);
         }
 
         &:active {
-            color: $cuarto-color;
+            color: nth($colores, 4);
         }
     }
 }
 
 .pie-flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, space-around, center);
     width: 100%;
     height: auto;
     font-size: 14px;
@@ -59,14 +74,13 @@
 }
 
 .pie-flex2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 100%;
     height: auto;
     font-size: 14px;
     font-weight: 200;
     display: none;
+
 }
 
 .derechos2 {

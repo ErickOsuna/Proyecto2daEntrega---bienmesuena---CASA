@@ -3,13 +3,11 @@
 /* * INICIO DEL HEADER */
 
 .encabezado {
-    background-color: $primer-color;
+    background-color: nth($colores, 1);
     width: 100%;
     grid-area: encabezado;
-    color: $segundo-color;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    color: nth($colores, 2);
+    @include flex (flex, space-around, center);
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
@@ -19,12 +17,10 @@
 
     ul {
         /* background-color: rgb(176, 176, 248); */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         width: 100%;
         height: auto;
-        color: $segundo-color;
+        color: nth($colores, 2);
         padding: 5px;
         margin: 5px 0;
 
@@ -39,22 +35,22 @@
 
         a {
             &:link {
-                color: $segundo-color;
+                color: nth($colores, 2);
                 text-decoration: none;
             }
 
             &:visited {
-                color: $segundo-color;
+                color: nth($colores, 2);
                 text-decoration: none;
             }
 
             &:hover {
-                color: $tercer-color;
+                color: nth($colores, 3);
                 text-decoration: none;
             }
 
             &:active {
-                color: $cuarto-color;
+                color: nth($colores, 4);
                 text-decoration: none;
             }
         }
@@ -62,9 +58,7 @@
 
     div {
         /* background-color: aquamarine; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         width: auto;
         height: auto;
         padding: 5px 60px 5px 10px;
@@ -81,7 +75,7 @@
 }
 
 .erick-boton {
-    border: 1px solid $segundo-color;
+    border: 1px solid nth($colores, 2);
 }
 
 /* ! FIN DEL HEADER */

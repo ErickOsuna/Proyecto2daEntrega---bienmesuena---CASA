@@ -3,26 +3,36 @@
 /* * INICIO DEL MAIN DE NOSOTROS */
 .titulo {
     h2 {
-        display: flex;
+        @extend %flex;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         margin: 0;
         font-weight: 200;
     }
 }
 
 .nosotros {
-    display: flex;
+    @extend %flex;
     width: 100%;
     height: auto;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0;
 
     div img {
         width: 300px;
+    }
+
+    p {
+        width: 80%;
+        margin-top: 80px;
+        font-weight: 200;
+        font-size: 18px;
+        text-align: justify;
+
+        span {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 22px;
+        }
     }
 }
 
@@ -31,9 +41,7 @@
         /* background-color: aquamarine; */
         width: 100%;
         height: auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include flex (flex, flex-end, center);
         text-transform: uppercase;
         margin-bottom: 40px;
 
@@ -45,19 +53,19 @@
             text-decoration: none;
 
             &:link {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:visited {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:hover {
-                color: $tercer-color;
+                color: nth($colores, 3);
             }
 
             &:active {
-                color: $cuarto-color;
+                color: nth($colores, 4);
             }
         }
     }
@@ -85,19 +93,19 @@
             text-decoration: none;
 
             &:link {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:visited {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:hover {
-                color: $tercer-color;
+                color: nth($colores, 3);
             }
 
             &:active {
-                color: $cuarto-color;
+                color: nth($colores, 4);
             }
         }
     }
@@ -120,50 +128,39 @@
             text-decoration: none;
 
             &:link {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:visited {
-                color: $primer-color;
+                color: nth($colores, 1);
             }
 
             &:hover {
-                color: $tercer-color;
+                color: nth($colores, 3);
             }
 
             &:active {
-                color: $cuarto-color;
+                color: nth($colores, 4);
             }
         }
     }
 }
 
 #director {
-    display: flex;
+    @extend %flex;
     width: 100%;
     height: auto;
-    justify-content: center;
-    align-items: center;
 
     h3 {
-        width: 100%;
-        height: auto;
-        font-size: 40px;
-        font-weight: 200;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 100px 0 30px 0;
+        @extend %integrantes;
     }
 }
 
 .members {
-    display: flex;
+    @include flex (flex, space-around, center);
     width: 80%;
     height: auto;
     padding: 0 50px;
-    justify-content: space-around;
-    align-items: center;
     text-align: center;
     margin-bottom: 60px;
 
@@ -177,7 +174,7 @@
     p {
         font-size: 18px;
         font-weight: 200;
-        padding: 40px;
+        padding: 20px;
         text-align: justify;
     }
 }
@@ -198,60 +195,32 @@
     p {
         font-size: 18px;
         font-weight: 200;
-        padding: 40px;
+        padding: 20px 20px 20px 40px;
         text-align: justify;
     }
 }
 
 #sopranos {
     h3 {
-        width: 100%;
-        height: auto;
-        font-size: 40px;
-        font-weight: 200;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 100px 0 30px 0;
+        @extend %integrantes;
     }
 }
 
 #contraltos {
     h3 {
-        width: 100%;
-        height: auto;
-        font-size: 40px;
-        font-weight: 200;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 100px 0 30px 0;
+        @extend %integrantes;
     }
 }
 
 #tenores {
     h3 {
-        width: 100%;
-        height: auto;
-        font-size: 40px;
-        font-weight: 200;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 100px 0 30px 0;
+        @extend %integrantes;
     }
 }
 
 #bajos {
     h3 {
-        width: 100%;
-        height: auto;
-        font-size: 40px;
-        font-weight: 200;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 100px 0 30px 0;
+        @extend %integrantes;
     }
 }
 

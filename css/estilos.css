@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,800;1,200;1,300;1,500;1,800&display=swap");
 /* *INICIO DEL RESET */
 * {
-  padding: 0;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   list-style: none;
@@ -18,6 +16,58 @@
   grid-auto-rows: 200px; }
 
 /* ! FIN DEL RESET */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
 /* * INICIO DEL HEADER */
 .encabezado {
   background-color: black;
@@ -35,9 +85,6 @@
   z-index: 100; }
   .encabezado ul {
     /* background-color: rgb(176, 176, 248); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
     color: white;
@@ -64,9 +111,6 @@
       text-decoration: none; }
   .encabezado div {
     /* background-color: aquamarine; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: auto;
     height: auto;
     padding: 5px 60px 5px 10px; }
@@ -81,22 +125,42 @@
   border: 1px solid white; }
 
 /* ! FIN DEL HEADER */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
 /* * INICIO DEL MAIN DEL INDEX */
 .cuerpo {
   grid-area: cuerpo;
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
 
 .primeraSeccion {
   width: 100%;
   height: 100px;
   margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column; }
   .primeraSeccion h2 {
     font-size: 50px;
@@ -126,6 +190,21 @@
     font-weight: 200;
     font-size: 18px;
     font-style: italic; }
+    .hero p a {
+      text-decoration: none;
+      transition: 0.6s; }
+      .hero p a:link {
+        color: white;
+        text-decoration: none; }
+      .hero p a:visited {
+        color: white;
+        text-decoration: none; }
+      .hero p a:hover {
+        color: red;
+        text-decoration: none; }
+      .hero p a:active {
+        color: #ff4949;
+        text-decoration: none; }
   .hero h2 {
     margin-left: 100px;
     margin-right: 200px;
@@ -134,29 +213,24 @@
 
 .aphorism {
   /* background-color: blanchedalmond; */
-  display: flex;
   width: 80%;
   height: auto;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   padding: 30px;
   margin: 30px 0; }
   .aphorism p {
     font-size: 18px;
     font-weight: 500;
     font-style: italic;
-    text-align: center; }
+    text-align: center;
+    margin: 30px 0; }
   .aphorism h4 {
     font-size: 18px;
     font-weight: 200;
     margin-bottom: 20px; }
 
 .music {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto; }
 
@@ -164,26 +238,59 @@
   width: 50px;
   margin: 20px; }
 
+audio {
+  margin-bottom: 50px; }
+
 /* ! FIN DEL MAIN DEL INDEX */
-/* * INICIO DEL MAIN DE NOSOTROS */
-.titulo h2 {
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
   display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
   width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DE NOSOTROS */
+.titulo h2 {
+  width: 100%;
   margin: 0;
   font-weight: 200; }
 
 .nosotros {
-  display: flex;
   width: 100%;
   height: auto;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0; }
   .nosotros div img {
     width: 300px; }
+  .nosotros p {
+    width: 80%;
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: justify; }
+    .nosotros p span {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 22px; }
 
 .submenu ul {
   /* background-color: aquamarine; */
@@ -259,28 +366,16 @@
       color: #ff4949; }
 
 #director {
-  display: flex;
   width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center; }
-  #director h3 {
-    width: 100%;
-    height: auto;
-    font-size: 40px;
-    font-weight: 200;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 100px 0 30px 0; }
+  height: auto; }
 
 .members {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 80%;
   height: auto;
   padding: 0 50px;
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
   margin-bottom: 60px; }
   .members h4 {
@@ -291,7 +386,7 @@
   .members p {
     font-size: 18px;
     font-weight: 200;
-    padding: 40px;
+    padding: 20px;
     text-align: justify; }
 
 .members2 {
@@ -307,50 +402,36 @@
   .members2 p {
     font-size: 18px;
     font-weight: 200;
-    padding: 40px;
+    padding: 20px 20px 20px 40px;
     text-align: justify; }
 
-#sopranos h3 {
-  width: 100%;
-  height: auto;
-  font-size: 40px;
-  font-weight: 200;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 100px 0 30px 0; }
-
-#contraltos h3 {
-  width: 100%;
-  height: auto;
-  font-size: 40px;
-  font-weight: 200;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 100px 0 30px 0; }
-
-#tenores h3 {
-  width: 100%;
-  height: auto;
-  font-size: 40px;
-  font-weight: 200;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 100px 0 30px 0; }
-
-#bajos h3 {
-  width: 100%;
-  height: auto;
-  font-size: 40px;
-  font-weight: 200;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 100px 0 30px 0; }
-
 /* ! FIN DEL MAIN DE NOSOTROS */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
 /* * INICIO DEL MAIN DE NOTICIAS */
 .news {
   display: flex;
@@ -367,16 +448,37 @@
     font-size: 20px; }
 
 /* ! FIN DEL MAIN DE NOTICIAS */
-/* * INICIO DEL MAIN DE MULTIMEDIA */
-.grid-gallery {
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   width: 100%;
   height: auto;
   gap: 15px 15px;
-  transition: 0.6s;
   margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DE MULTIMEDIA */
+.grid-gallery {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  transition: 0.6s; }
   .grid-gallery div img {
     width: 100%;
     transition: 0.6s;
@@ -386,24 +488,16 @@
       cursor: pointer; }
 
 .grid-gallery2 {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 100%;
-  height: auto;
-  gap: 15px 15px;
-  transition: 0.6s;
-  margin: 50px 0; }
+  transition: 0.6s; }
 
 .video4 {
   grid-row: span 2;
   grid-column: span 3; }
 
 .boton2 {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   margin: 50px 0; }
 
 .boton-multimedia {
@@ -414,6 +508,32 @@
   margin: 60px; }
 
 /* ! FIN DEL MAIN DE MULTIMEDIA */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
 /* *INICIO DEL MAIN DE CONTACTO */
 .contacto {
   /* background-color: aquamarine; */
@@ -479,6 +599,32 @@
   width: 100%; }
 
 /* ! FIN DEL MAIN DE CONTACTO */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
 .pie {
   grid-area: pie;
   display: flex;
@@ -494,6 +640,15 @@
   .pie div a {
     transition: 0.6s;
     text-decoration: none; }
+    .pie div a:hover {
+      transform: scale(1.3);
+      color: red; }
+    .pie div a:link {
+      color: white; }
+    .pie div a:visited {
+      color: white; }
+    .pie div a:active {
+      color: #ff4949; }
   .pie img {
     width: 35px;
     margin: 5px;
@@ -520,9 +675,6 @@
   font-weight: 200; }
 
 .pie-flex2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto;
   font-size: 14px;

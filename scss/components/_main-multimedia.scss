@@ -2,19 +2,15 @@
 
 /* * INICIO DEL MAIN DE MULTIMEDIA */
 .grid-gallery {
-    display: grid;
+    @extend %grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: auto;
-    gap: 15px 15px;
     transition: 0.6s;
-    margin: 50px 0;
 
     div img {
         width: 100%;
         transition: 0.6s;
-        border: 0.1px solid $segundo-color;
+        border: 0.1px solid nth($colores, 2);
 
         &:hover {
             scale: 1.8;
@@ -24,14 +20,10 @@
 }
 
 .grid-gallery2 {
-    display: grid;
+    @extend %grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-    height: auto;
-    gap: 15px 15px;
     transition: 0.6s;
-    margin: 50px 0;
 }
 
 .video4 {
@@ -40,10 +32,8 @@
 }
 
 .boton2 {
-    display: flex;
+    @extend %flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     margin: 50px 0;
 }
 
