@@ -449,6 +449,20 @@ audio {
     margin: 40px 0;
     font-weight: 300;
     font-size: 20px; }
+    .news p a {
+      transition: 0.6s; }
+      .news p a:link {
+        color: black;
+        text-decoration: none; }
+      .news p a:visited {
+        color: black;
+        text-decoration: none; }
+      .news p a:hover {
+        color: red;
+        text-decoration: none; }
+      .news p a:active {
+        color: #ff4949;
+        text-decoration: none; }
 
 /* ! FIN DEL MAIN DE NOTICIAS */
 * {
