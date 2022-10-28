@@ -381,14 +381,13 @@ audio {
   .members h4 {
     font-size: 22px;
     font-weight: 500;
-    padding: 20px;
     font-style: italic; }
   .members p {
     font-size: 18px;
     font-weight: 200;
     padding: 20px 0 20px 0;
     text-align: justify;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-right: 0; }
 
 .members2 {
@@ -402,6 +401,8 @@ audio {
     font-weight: 500;
     padding: 20px;
     font-style: italic; }
+  .members2 div p {
+    width: 100%; }
   .members2 p {
     font-size: 18px;
     font-weight: 200;
